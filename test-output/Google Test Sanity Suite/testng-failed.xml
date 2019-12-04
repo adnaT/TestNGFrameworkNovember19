@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [Google Test Sanity Suite]">
+  <test thread-count="5" verbose="3" name="Verizon Sanity Test(failed)">
+    <classes>
+      <class name="com.hubspot.tests.HomePageTest">
+        <methods>
+          <include name="verifyHomePageTitleTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyLoggedInUserAccountTest"/>
+          <include name="verifyHomePageHeaderTest"/>
+        </methods>
+      </class> <!-- com.hubspot.tests.HomePageTest -->
+      <class name="com.hubspot.tests.LoginTest">
+        <methods>
+          <include name="loginPageTitleTest"/>
+          <include name="loginTest1"/>
+          <include name="loginTest2"/>
+          <include name="setUp"/>
+          <include name="loginTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.hubspot.tests.LoginTest -->
+    </classes>
+  </test> <!-- Verizon Sanity Test(failed) -->
+</suite> <!-- Failed suite [Google Test Sanity Suite] -->
